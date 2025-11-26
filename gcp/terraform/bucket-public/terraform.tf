@@ -17,3 +17,4 @@ provider "google" {
     "test-path" = "gcp_terraform_bucket-without-uniform-access"
   }
 }
+
