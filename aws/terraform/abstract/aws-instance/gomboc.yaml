@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../../../gomboc-schema/test-case.yaml
+
+name: Encrypt aws instance data at rest
+
+provider: AWS
+iac:
+  language: terraform
+  version: v1.5.8
+
+canBeApplied: false
+
+benchmarkRecommendations:
+  - id: gomboc-ai/cis/controls_8-1-2/3_data_protection/3-11_encrypt_sensitive_data_at_rest
+    name: CIS - Controls 8.1.2 - 3 Data Protection - 3.11 Encrypt Sensitive Data at Rest
+    benchmark: CIS Amazon Web Services Foundations Benchmark
+    benchmarkVersion: v8.1.2
